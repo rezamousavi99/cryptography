@@ -22,7 +22,7 @@ def initiallize():
 
 
 def encrypt(public_key):
-    message = 'SeyedMohammadReza Mousavitabar ---> 39928441054130'
+    message = 'This is my message to all of my users'
     encrypted_message = rsa.encrypt(message.encode(), public_key)
 
     with open('encrypted.message', 'wb') as f:
@@ -37,7 +37,7 @@ def decrypt(private_key):
     return clear_message.decode()
 
 def sign(private_key):
-    message1 = "I have a new account on Twitter which is @madeupname453"
+    message1 = "I have a new account on Twitter which is @madeupnameccc453"
 
     signature = rsa.sign(message1.encode(), private_key, "SHA-256")
 
